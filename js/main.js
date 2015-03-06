@@ -45,6 +45,19 @@ require( ['jquery', 'onepage', 'common'], function(jquery, onepage, P){
 		})
 
 
+		var flag = "a";
+		var main = function(){
+			console.log("main: "+flag);
+
+			var flag = "b";
+			console.log("main: "+this.flag);
+
+			this.flag = "c";
+		}
+		var bbb = main();
+		var ccc = new main();
+
+
 
 
 	})

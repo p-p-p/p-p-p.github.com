@@ -21,14 +21,22 @@
 		<div class="section bg" id="panel5">
 			
 			<div class="content">
-				<h2>第一篇第一篇</h2>
+				<h2>作用域</h2>
+				<br>
 				<p>
-					第一篇第一篇<br>
-					第一篇第一篇<br>
-					第一篇第一篇<br>
-					<br>
-					第一篇第一篇
+					var flag = "a"; <br>
+					var main = function(){  <br>
+					&nbsp;&nbsp;	console.log("main: "+flag);  <br>
+
+					&nbsp;&nbsp;	var flag = "b";  <br>
+					&nbsp;&nbsp;	console.log("main: "+this.flag);  <br>
+
+					&nbsp;&nbsp;	this.flag = "c";  <br>
+					} <br>	
+					var bbb = main();  <br>
+					var ccc = new main();  <br>
 				</p>
+				<p>最后两行执行结果一样吗?</p>
 			</div>
 			
 		</div>
