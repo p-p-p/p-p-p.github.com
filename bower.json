@@ -1,0 +1,22 @@
+{
+  "name": "p-p-p system",
+  "description": "p-p-p system",
+  "version": "0.2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.9",
+    "underscore": "~1.7.0",
+    "requirejs": "~2.1.9"
+  },
+  "authors": [
+    "pp"
+  ],
+  "license": "MIT",
+  "private": true
+}
